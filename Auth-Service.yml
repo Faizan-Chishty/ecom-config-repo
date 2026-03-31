@@ -1,13 +1,26 @@
-
 spring:
   datasource:
-    username: Faizan 
+    username: Faizan
     password: Faizan@123
     url: jdbc:mysql://localhost:3306/legendit_ecomm
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+  boot:
+    admin:
+      client:
+        url:
+          - http://localhost:1111/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+
 server:
   port: 8081
-
