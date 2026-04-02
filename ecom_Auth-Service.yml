@@ -1,7 +1,7 @@
 spring:
   datasource:
     username: Faizan
-    password: Faizan@123
+    password: Faizan@12345
     url: jdbc:mysql://localhost:3306/legendit_ecomm
 
   jpa:
