@@ -1,0 +1,47 @@
+  datasource:
+    username: Faizan
+    password: Faizan@12345
+    url: jdbc:mysql://localhost:3306/legendit_ecomm
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  boot:
+    admin:
+      client:
+        url:
+          - http://localhost:1111/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8082	
+app:
+messages:
+categoryAdded: "Category Added Successfully"
+categoryAddErr: "Failed To Add Category"
+categoryUpdate: "Category Updated Successfully"
+categoryFetch: "Categories Fetched Successfully"
+categoryUpdateErr: "Failed To Update Category"
+categoryFetchErr: "Failed To Fetch Categories"
+categorySelect: "Category Retrieved Successfully"
+categorySelectErr: "Failed To Retrieve Category"
+categoryDelete: "Category Deleted Successfully"
+categoryDeleteErr: "Failed To Delete Category"
+productAdded: "Product Added Successfully"
+productAddErr: "Failed To Add Product"
+productUpdate: "Product Updated Successfully"
+productUpdateErr: "Failed To Update Product"
+productFetch: "Products Fetched Successfully"
+productFetchErr: "Failed To Fetch Products"
+productSelect: "Product Retrieved Successfully"
+productSelectErr: "Failed To Retrieve Product"
+productDelete: "Product Deleted Successfully"
+productDeleteErr: "Failed To Delete Product"
+ 
